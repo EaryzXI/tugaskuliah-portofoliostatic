@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Portofolio Mohamad Ridho Muzakhi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">  
+
+</head>
+<body>
+
+  <!--HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <span class="logo">• Portofolio</span>
+      </div>
+      <div class="header-right">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle tema">
+          <span class="icon-sun">
+            <img src="/img/kingemyu.png" alt="king MU" class="logo-kingemyu">
+          </span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Buka menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- OVERLAY -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-menu">
+      <li><a href="#home" class="nav-link" data-target="home">Beranda</a></li>
+      <li><a href="#profil" class="nav-link" data-target="profil">Profil</a></li>
+      <li><a href="#project" class="nav-link" data-target="project">Project</a></li>
+      <li><a href="#kontak" class="nav-link" data-target="kontak">Kontak</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT (CONTINUOUS SCROLL) -->
+  <main class="main">
+
+    <!-- HOME -->
+    <section id="home" class="scroll-section section-home">
+      <div class="container home-container">
+        <div class="profile-pic">
+          <img src="/img/rdh.jpeg" accesskey="foto profil" class="profile-pic">
+        </div>
+        <h1 class="home-name">Mohamad Ridho Muzakhi</h1>
+        <div class="skill-badges">
+          <span class="badge">Software Engineer</span>
+          <span class="badge">AI-Assisted Engineer</span>
+          <span class="badge">Fullstack Developer</span>
+          <span class="badge">Network Administrator</span>
+        </div>
+        <p class="home-location"><i class="bi bi-geo-alt"></i> Serang, Banten — Indonesia</p>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="scroll-section section-profil">
+      <div class="container">
+        <h2 class="section-title">Profil</h2>
+        <div class="profil-grid">
+          <div class="profil-card">
+            <div class="profil-icon"><i class="bi bi-person-fill" style="color: #0A66C2;"></i></div>
+            <div class="profil-content">
+              <span class="profil-label">Nama</span>
+              <span class="profil-value">Mohamad Ridho Muzakhi</span>
+            </div>
+          </div>
+          <div class="profil-card">
+            <div class="profil-icon"><i class="bi bi-house-fill" style="color: #0A66C2;"></i></div>
+            <div class="profil-content">
+              <span class="profil-label">Alamat</span>
+              <span class="profil-value">Serang, Banten - Indonesia</span>
+            </div>
+          </div>
+          <div class="profil-card full-width">
+            <div class="profil-icon"><i class="bi bi-file-earmark-person" style="color: #0A66C2;"></i></div>
+            <div class="profil-content">
+              <lpan class="profil-label">Ringkasan Profil & Keahlian</lpan>
+              <span class="profil-value">Lulusan SMK Jurusan Teknik Komputer dan Jaringan (TKJ) yang saat ini sedang menempuh pendidikan S1 di Universitas Pamulang (Kampus Serang). Memiliki adaptabilitas tinggi dan motivasi kuat dengan pemahaman tentang pengembangan Full-Stack Web, serta pernah mengikuti Program Beasiswa IDCamp 2024 pada alur belajar Front-End Web Developer. Berbekal keahlian fondasi networking dari pengalaman mengelola usaha WiFi mandiri, saya memiliki antusiasme tinggi untuk mengimplementasikan stack teknologi modern dan menerapkan metode AI-assisted development (vibe coding) guna efisiensi pengembangan sistem. Memiliki kemampuan analisis masalah yang kuat, cepat menguasai teknologi baru, dan siap berkontribusi dalam tim development yang dinamis.</span>
+            </div>
+          </div>
+          <div class="profil-card full-width">
+            <div class="profil-icon"><i class="bi bi-mortarboard-fill" style="color: #0A66C2;"></i></div>
+            <div class="profil-content">
+              <span class="profil-label">Riwayat Pendidikan</span>
+              <div class="profil-value">
+                <div class="edu-item">
+                  <strong>S1 — Sistem Komputer</strong>
+                  <span>Universitas Pamulang Serang (2024 – Sekarang)</span>
+                </div>
+                <div class="edu-item">
+                  <strong>SMK — Teknik Komputer dan jaringan</strong>
+                  <span>SMKN 1 Kragilan (2019 – 2022)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profil-card full-width">
+            <div class="profil-icon"><i class="bi bi-braces" style="color: #0A66C2;"></i></div>
+            <div class="profil-content">
+              <span class="profil-label">Keahlian</span>
+              <ul class="kompetensi-list">
+                <li>C++ & JavaScript (React / Vite)</li>
+                <li>Python (Backend & Automation)</li>
+                <li>Supabase (PostgreSQL) & MySQL</li>
+                <li>MikroTik & PPPOE Management</li>
+                <li>Cloud Computing & Web Hosting</li>
+                <li>Advanced Prompt Engineering (AI)</li>
+                <li>Machine Learning & Data Analysis</li>
+                <li>UI/UX Design (Figma)</li>
+                <li>DevOps (Docker, CI/CD)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project" class="scroll-section section-project">
+      <div class="container">
+        <h2 class="section-title">Project</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image gradient-placeholder">
+              <span class="placeholder-glow">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Sistem Informasi Manajemen (in-progress)</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">BUN</span>
+                <span class="tech-tag">Supabase</span>
+              </div>
+              <p class="project-desc">Sistem Informasi Manajemen adalah Proyek berbasis web untuk PKM yang hampir seluruhnya dikembangkan dengan menggunakan metode Vibe Coding (AI-Assisted Development). Berfokus pada pengelolaan data santri secara real-time dengan siklus penegmebangan yang cepat dan efisien.</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image gradient-placeholder">
+              <span class="placeholder-glow">Coming Soon</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project Mendatang</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Akan diumumkan</span>
+              </div>
+              <p class="project-desc">Project ini akan hadir dengan detail dan informasi yang lebih lengkap. Nantikan pembaruan selanjutnya!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="scroll-section section-kontak">
+      <div class="container">
+        <h2 class="section-title">Kontak</h2>
+        <div class="kontak-grid">
+          <div class="kontak-item">
+            <span class="kontak-icon"><i class="bi bi-envelope text-body fs-3"></i></span>
+            <span class="kontak-label">Email</span>
+            <span class="kontak-value">ridhomuzakhi@gmail.com</span>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon"><i class="bi bi-geo-alt-fill" style="color: #EA4335;"></i></span>
+            <span class="kontak-label">Alamat</span>
+            <span class="kontak-value">Serang, Banten - Indonesia</span>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon"><i class="bi bi-github" text-body fs3"></i></span>
+            <span class="kontak-label">GitHub</span>
+            <span class="kontak-value">github.com/earyzXI</span>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon"><i class="bi bi-instagram" style="color: #E1306C;"></i></span>
+            <span class="kontak-label">Instagram</span>
+            <span class="kontak-value">@rimzz.zy</span>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon"><i class="bi bi-linkedin" style="color: #0A66C2;"></i></span>
+            <span class="kontak-label">LinkedIn</span>
+            <span class="kontak-value">linkedin.com/in/ridhomuzakhi</span>
+          </div>
+          <div class="kontak-item">
+            <span class="kontak-icon"><i class="bi bi-tiktok" text-body fs3"></i></span>
+            <span class="kontak-label">TikTok</span>
+            <span class="kontak-value">@eaxrimzyy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="roket"><i class="bi bi-rocket"></i>
+      <p>Till Infinity And Beyond<br>"Buzz Lightyear"</p>
+    </div>  
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2026 Mohamad Ridho Muzakhi — Fullstack Dev</p>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
