@@ -48,6 +48,10 @@
   // ─── Smooth Scroll Navigation ────────────────────────────────
   navLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      // Hanya preventDefault untuk hash link internal (#...), bukan link eksternal
+      if (!href || href.charAt(0) !== '#') return;
+
       e.preventDefault();
       if (isSidebarOpen) closeSidebar();
 

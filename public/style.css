@@ -143,6 +143,17 @@ body:not(.dark-mode) .theme-btn .icon-sun { opacity: 1; transform: rotate(0) sca
 body.dark-mode .theme-btn .icon-sun { opacity: 0; transform: rotate(90deg) scale(0); }
 body.dark-mode .theme-btn .icon-moon { opacity: 1; transform: rotate(0) scale(1); }
 
+.theme-btn,
+.theme-btn .icon-sun
+.theme-btn .icon-moon {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .hamburger-btn {
   background: transparent; border: none; cursor: pointer;
   width: 42px; height: 42px;
@@ -266,6 +277,34 @@ body.sidebar-open .overlay { opacity: 1; visibility: visible; }
 
 .home-location { font-size: 1.1rem; color: var(--text-secondary); font-weight: 500; }
 
+.tech-stack {
+  margin-top: 50px ;
+  text-align: center;
+
+}
+
+.text-stack {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin: 10px 0;
+  background: linear-gradient(135deg, #0440b1, #1554db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.icon-row {
+  font-size: 1.3rem;
+  justify-content: space-around;
+  border-color: #020617;
+  text-shadow: 0 2px 2px 2px #020617;
+}
+
+.icon-row i {
+  margin: 0 3px;
+}
+
 /* ===== PROFIL ===== */
 .section-profil { background: var(--bg-secondary); }
 .profil-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -361,10 +400,15 @@ body.sidebar-open .overlay { opacity: 1; visibility: visible; }
 .kontak-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; max-width: 850px; }
 
 .kontak-item {
+  position: relative;
+  z-index: 5;
   display: flex; align-items: center; gap: 16px;
   background: var(--bg-primary); border: 1px solid var(--border-color);
   border-radius: 14px; padding: 18px 22px;
   transition: all var(--transition-speed) ease;
+}
+.kontak-item a {
+  touch-action: manipulation;
 }
 .kontak-item:hover { transform: translateX(6px) translateY(-3px); border-color: var(--accent); box-shadow: 0 8px 25px var(--accent-glow); }
 
@@ -377,21 +421,41 @@ body.sidebar-open .overlay { opacity: 1; visibility: visible; }
   font-size: 0.8rem; font-weight: 700; color: var(--accent);
   text-transform: uppercase; letter-spacing: 0.8px; min-width: 70px;
 }
-.kontak-value { font-size: 0.95rem; color: var(--text-primary); font-weight: 500; }
+.kontak-value {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+}
+.kontak-value[href] {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 4px;
+  margin: -8px -4px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.kontak-value[href]:hover {
+  color: var(--accent);
+}
+.kontak-value[href]:active {
+  color: var(--accent-hover);
+}
 
 .roket {
   padding: 10px auto;
   margin-top: 50px;
   margin-bottom: 70px;
-  font-size:45px;
+  font-size:65px;
   text-align: center;
 }
 
 .roket p {
-  margin: 10px auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  
+  margin: 3px auto;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 /* ===== FOOTER ===== */
